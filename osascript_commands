@@ -1,9 +1,0 @@
-This will open a Choose a Directory Window, then return the directory Path into the variable $s
-
-s=$(osascript -e 'choose folder with prompt "Please choose a file"')
-
-This one works for only Files, Note the applescript syntax 'choose file with prompt'
-s=$(osascript -e 'choose file with prompt "Please choose a file"')
-
-Simply Display a Dialog. Returning the value to variable $s
-s=$(osascript -e 'tell app "System Events" to display dialog "Are you sure you like Kittens?"')
